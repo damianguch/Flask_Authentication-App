@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container w-50 mt-4 border mb-5 p-5 rounded shadow bg-white">
+  <div class="row justify-content-center">
+    <div>
+      <h2>Welcome to the Dashboard</h2>
+      {% if user %}
+      <p>User Information</p>
+      <ul>
+        <li>Name: {{ user[1]}}</li>
+        <li>Email: {{ user[2]}}</li>
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}
